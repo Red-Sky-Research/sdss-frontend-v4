@@ -1,0 +1,60 @@
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  azureStorageAccountName: 'sadocumentstoredev005'
+  azureContainerName: 'web'
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build
+    displayName: 'Build and Publish'
+    steps:
+    - task: UseNode@1
+      inputs:
+        version: '14.x'
+        checkLatest: true
+      displayName: 'Install Node.js'
+
+    - script: |
+        rm -rf $(System.DefaultWorkingDirectory)/build
+      displayName: 'Clean Build Folder'
+
+    - script: |
+        set -ex
+        npm install
+        npm run build
+        find . -name build
+      workingDirectory: $(Build.SourcesDirectory)
+      displayName: 'Build React App'
+    
+    - script: |
+        echo "Build Source Directory: $(Build.SourcesDirectory)"
+        echo "Working Directory: $(System.DefaultWorkingDirectory)"
+        echo "Environment Variables: $(env)"
+        ls -l $(System.DefaultWorkingDirectory)
+      displayName: 'List Contents of Artifact Staging Directory'
+
+- stage: Deploy
+  jobs:
+  - job: Deploy
+    displayName: 'Deploy to Azure Blob Storage'
+    steps:
+    - task: AzureFileCopy@4
+      inputs:
+        SourcePath: '$(System.DefaultWorkingDirectory)'
+        azureSubscription: 'SDSS DevOps'
+        Destination: 'AzureBlob'
+        storage: $(azureStorageAccountName)
+        ContainerName: '$web'
+      displayName: 'Deploy to Azure Blob Storage'
+
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: 'SDSS DevOps'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          az storage blob service-properties update --static-website --404-document 404.html --index-document index.html --account-name $(azureStorageAccountName)
+      displayName: 'Enable Static Website'

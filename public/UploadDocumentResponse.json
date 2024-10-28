@@ -1,0 +1,88 @@
+{
+  "DocumentId": "ac440d74-b543-4b68-83e8-abf82c36a6d5",
+  "customMetadata": {
+    "assetId": "abcdefg",
+    "ticker": "REtokens",
+    "docType": "TITLE_REPORT",
+    "identityId": "398475928abc987987",
+    "validation": "true"
+  },
+  "documentMetadata": {
+    "contentHash": {
+      "type": "SHA256",
+      "value": "4963cc1c3db3f40ffee50474a403bdaa23d297605e78b3f0c5fe419824744c1b"
+    },
+    "name": "Validation_NegativeTest_NoNameOrAddress.pdf"
+  },
+  "id": "65b26f775697e35c560e7669",
+  "processMetadata": {
+    "hash": "4963cc1c3db3f40ffee50474a403bdaa23d297605e78b3f0c5fe419824744c1b",
+    "hashAlgorithm": "SHA256",
+    "instrumentation": {
+      "blob": {
+        "endTimeStamp": "2024-06-27T15:52:36.726Z",
+        "startTimeStamp": "2024-06-27T15:52:36.555Z",
+        "totalTimeTakenInMillisecond": "171"
+      },
+      "hash": {
+        "endTimeStamp": "2024-06-27T15:52:36.927Z",
+        "startTimeStamp": "2024-06-27T15:52:36.760Z",
+        "totalTimeTakenInMillisecond": "167"
+      },
+      "headers": {
+        "Accept": "application/json,text/plain,*/*",
+        "Accept-Encoding": "gzip,deflate,br,zstd",
+        "Accept-Language": "en-US,en; q=0.9",
+        "Host": "prod-23.northcentralus.logic.azure.com",
+        "Max-Forwards": "10",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0,(Macintosh; Intel Mac OS X 10_15_7),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/126.0.0.0,Safari/537.36",
+        "Origin": "http://localhost:3000",
+        "sec-ch-ua": "\"Not/A)Brand\";v=\"8\",\"Chromium\";v=\"126\",\"Google Chrome\";v=\"126\"",
+        "sec-ch-ua-mobile": "?0",
+        "X-Forwarded-For": "73.218.90.146, 20.98.58.179:1984",
+        "api-version": "v1",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "priority": "u=1,i",
+        "X-Subscription-Id": "65b26f775697e35c560e7669",
+        "X-User-Email": "tom@whitehillsoftware.com",
+        "X-Product-Name": "Unlimited",
+        "X-ARR-LOG-ID": "91c1b213-b936-4cb6-ab7f-94cc4264c03e",
+        "CLIENT-IP": "20.98.58.179:1984",
+        "DISGUISED-HOST": "prod-23.northcentralus.logic.azure.com",
+        "X-SITE-DEPLOYMENT-ID": "flowfe-prod-ch-rp00-app",
+        "WAS-DEFAULT-HOSTNAME": "flowfe-prod-ch-rp00-app.flow-prod-ch-rp00-ase.p.azurewebsites.net",
+        "X-Forwarded-Proto": "https",
+        "X-AppService-Proto": "https",
+        "X-ARR-SSL": "2048|256|CN=Microsoft Azure RSA TLS Issuing CA 03, O=Microsoft Corporation, C=US|CN=northcentralus.logic.azure.com, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+        "X-Forwarded-TlsVersion": "1.2",
+        "X-Original-URL": "/workflows/ffa7d433b37746c6b4d9aed3107f0788/triggers/manual/paths/invoke/?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=ie2Mv1qRjxRFQ0OsnuNP-RWAgNs44a-o-71EGJJRz98",
+        "X-WAWS-Unencoded-URL": "/workflows/ffa7d433b37746c6b4d9aed3107f0788/triggers/manual/paths/invoke/?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=ie2Mv1qRjxRFQ0OsnuNP-RWAgNs44a-o-71EGJJRz98",
+        "Content-Length": "9658",
+        "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundarynze2E2YdJ55yqCIK"
+      },
+      "trackingId": "08584821033315701660778603382CU07"
+    },
+    "systemMetadata": {
+      "Id": "JTJmc2RzcyUyZmFjNDQwZDc0LWI1NDMtNGI2OC04M2U4LWFiZjgyYzM2YTZkNS5wZGY=",
+      "Name": "ac440d74-b543-4b68-83e8-abf82c36a6d5.pdf",
+      "DisplayName": "ac440d74-b543-4b68-83e8-abf82c36a6d5.pdf",
+      "Path": "/sdss/ac440d74-b543-4b68-83e8-abf82c36a6d5.pdf",
+      "LastModified": "2024-06-27T15:52:36Z",
+      "Size": 9176,
+      "MediaType": "application/pdf",
+      "IsFolder": false,
+      "ETag": "\"0x8DC96C12A933024\"",
+      "FileLocator": "JTJmc2RzcyUyZmFjNDQwZDc0LWI1NDMtNGI2OC04M2U4LWFiZjgyYzM2YTZkNS5wZGY=",
+      "LastModifiedBy": null
+    }
+  },
+  "_rid": "ZLRqAIrCCJyxAgAAAAAAAA==",
+  "_self": "dbs/ZLRqAA==/colls/ZLRqAIrCCJw=/docs/ZLRqAIrCCJyxAgAAAAAAAA==/",
+  "_etag": "\"040081bf-0000-0400-0000-667d8ac50000\"",
+  "_attachments": "attachments/",
+  "_ts": 1719503557
+}
